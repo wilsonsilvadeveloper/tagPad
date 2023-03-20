@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333333;
+    color: #fff;
+    font-family: 'Fira Code', monospace;
+}
+
+.header {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Fira Code';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 90px;
+    line-height: 118px;
+    text-align: center;
+    color: #FFFFFF;
+    animation: cor 4s infinite 1s normal steps(60);
+}
+
+@keyframes cor {
+    0% {
+        color: #FFFFFF;
+    }
+
+    50% {
+        color: #24FF00;
+    }
+
+    100% {
+        color: #fff;
+    }
+}
+
+.p {
+    text-align: center;
+    color: #4f4444;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formulario {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    width: 300px;
+    height: 44px;
+    border: none;
+    margin-bottom: 32px;
+    padding-left: 8px;
+    background-color: transparent;
+    border-bottom: 1px solid #FFFFFF;
+    color: white;
+    font-size: 18px;
+}
+
+.input::placeholder {
+    color: #6b6b6b;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 37px;
+}
+
+#recuperaSenha {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #24FF00;
+    cursor: pointer;
+}
+
+.botao {
+    width: 302px;
+    height: 46px;
+    margin-top: 50px;
+    background: rgba(203, 234, 227, 0.1);
+    border: 1px solid #888888;
+    border-radius: 15px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.divIcones {
+    margin-top: 20px;
+    height: auto;
+}
+
+.icones {
+    margin: 10px;
+    width: 34.95px;
+    height: 37.04px;
+    cursor: pointer;
+}
+
+.p2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 33px;
+    text-align: center;
+    cursor: pointer;
+    color: #24FF00;
+    margin-top: 32px;
+    margin-bottom: 30px;
+}

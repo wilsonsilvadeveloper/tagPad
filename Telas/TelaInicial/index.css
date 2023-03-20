@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Code', monospace;
+    color: #fff;
+}
+
+body {
+    background-color: #1E1E1E;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    position: relative;
+}
+
+.header>h1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 10px;
+    margin-left: 12px;
+    animation: cor 4s infinite 1s normal steps(60);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    color: #FFFFFF;
+}
+
+.icone-logout {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 15px;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+@keyframes cor {
+    0% {
+        color: #FFFFFF;
+    }
+
+    50% {
+        color: #24FF00;
+    }
+
+    100% {
+        color: #FFFFFF;
+    }
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo-principal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-cadastra-tasg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botaoCadastrarTag {
+    width: 300px;
+    height: 100px;
+    font-style: normal;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #7E7E7E;
+    cursor: pointer;
+    background-color: #1E1E1E;
+}
+
+.botaoCadastrarTag {
+    --green: rgb(14, 177, 14);
+    font-size: 20px;
+    padding: 0.7em 2.7em;
+    letter-spacing: 0.06em;
+    border-radius: 0.6em;
+    overflow: hidden;
+    transition: all 0.3s;
+    line-height: 1.4em;
+    border: 2px solid var(--green);
+    background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%, transparent 60%, rgba(27, 253, 156, 0.1) 100%);
+    color: var(--green);
+    box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
+}
+
+.botaoCadastrarTag:hover {
+    color: #82ffc9;
+    box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.6), 0 0 9px 3px rgba(27, 253, 156, 0.2);
+}
+
+.p {
+    margin-top: 60px;
+    color: #7E7E7E;
+}
+
+.list-tags {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15%;
+    width: 600px;
+    overflow: hidden;
+    animation: apareceTags 1s 200ms 1 normal both;
+}
+
+@keyframes apareceTags {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 600px;
+    }
+}
+
+.list-tags > ul > li {
+    list-style-type: none;
+}
+
+.lista-links-tags {
+    display: flex;
+    flex-direction: row;
+}
+
+.tags {
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #24FF00;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.tags:hover {
+    transition: 500ms;
+    transform: scale(1.2);
+    background: #2c2c2c;
+}
+
+.tags > a {
+    text-decoration: none;
+    color: #24FF00;
+}
+
+.botao-procrurar {
+    width: 190px;
+    height: 100px;
+    margin: auto;
+    margin-top: 60px;
+    background-color: #1E1E1E;
+    border-radius: 20px;
+    transition: all .3s;
+    font-size: 16px;
+}
+
+.botao-procrurar {
+    background-color: #1a1a1a;
+    transition: all .2s;
+}
+
+.botao-procrurar:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+}
+
+.botao-procrurar:hover {
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+    color: #24FF00;
+}
